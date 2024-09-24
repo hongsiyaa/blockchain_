@@ -1,0 +1,96 @@
+@import './common.css';
+@import './reset.css';
+
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: transform .3s, color .5s;
+    padding: 0 100px;
+}
+#header.active{
+    transform: translateY(0);
+}
+#header.dark{
+    color: #000;
+}
+#header #logo{
+    width: 100px;
+    padding: 19px 0;
+}
+#header #logo img{
+    filter: invert(1);
+    transition: filter .5s;
+}
+#header .lang-img svg path,
+#header .lang-arr svg path{
+    transition: stroke .5s;
+}
+#header.dark #logo img {
+    filter: none;
+}
+#header.dark .lang-img svg path,
+#header.dark .lang-arr svg path {
+    stroke: #000;  
+}
+.dark #header.dark{
+    color: #fff;
+}
+.dark #header.dark #logo img {
+    filter: invert(1);
+}
+.dark #header.dark .lang-img svg path,
+.dark #header.dark .lang-arr svg path {
+    stroke: #fff;  
+}
+
+#gnb .gnb-list{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}   
+#gnb .gnb-list .gnb-tite{
+    padding: 23px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+#gnb .gnb-list .btn-lang{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#gnb .gnb-list .lang-txt{ 
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#footer{
+    background: #000;
+    padding: 58px 0;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+#footer .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer small{
+    margin-top: 10px;
+    display: block;
+}
+#footer .ft-logo{
+    width: 193px;
+}

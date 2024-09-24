@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{margin:0;padding:0;font:inherit;color:inherit; font-family: "Archivo", "Noto Sans KR", sans-serif;}
+*, :after, :before {box-sizing:border-box;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+li{list-style: none;}
+
+body {
+    font-family: "Archivo", "Noto Sans KR", sans-serif;
+    letter-spacing: -0.025em;
+    background: #fff;
+    transition: background .3s;
+}
+body.dark{
+    background: #000;
+}
